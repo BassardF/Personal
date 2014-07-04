@@ -243,5 +243,35 @@
 
     }
 
+    /*----------------------------------------------------*/
+   /* Messi
+   /*----------------------------------------------------*/
+
+    var MESSI = {
+      sport : "<p>Sport has always been a very important part of my life. I started this addiction early with swimming, skating and roller skating.</p><p>I have had the good fortune to grow up in a spaceful environment and sport was a perfect way to spend time outdoor with my friends.</p><p>Since then, I've developed other interests in sports as performance, competition an health gain. In my methodology, sport is always seen through the pursuit of a concrete goal. The complementarity of a short term and a long term goal allow me to stay motivated while thinking big.  In the end, I see sport as the key to a balanced, active and social life.</p><p>Through my years of practice, I have try swimming, running, judo, weight lifting, fitness, American football and soccer. Currently, I'm essentially focused on crossfit and physical improvement.</p><p>I also se sport as a way to know yourself, to get a better understanding of what you are capable of. It's a great place to notice that you are the only one responsible of the outcome of your own pursuit of happiness.</p>",
+      photo : "<p>Photography is a brand new hobby of mine. The idea came from two factors, first is started traveling and hiking a lot and getting a beautiful snapshot of the landscapes I come by looks like a good idea. Secondly, I hit a cap in the field of web design because of my lack of practice with picture modifying tools.</p> <p>So I decided that a quick start in photography could help me both ways.</p><p>I started with a quick blast through every technical fact, by the scientific point of view. Then, I followed as many 101 as I could find. I'm now experiencing all of the theory I just learned and getting as much fun as possible while doing it.</p><p>In a next step, I aim to share my work with the community and seek feedback to improve my technical skills. Photography is mostly about taste but reviews could really help me getting to the next level.</p>",
+      nutrition : "<p>Master your nutrition is an easy way to feel like an improve version of yourself and I took years to understand that. I started thinking about nutrition to improve my performance in sports and I found not only ca but also many other benefits.</p><p>Most of the people who are getting into nutrition are focused one goal which is key to stay motivated but it can leads to incoherent results.</p><p>Personally, I started to get stronger and leaner but it also offers:</p><ul><li> - More energy <li><li> - Great health benefits <li><li> - Skills in cooking <li><li> - Knowledge of the food industry <li><li> - Knowledge of yourself and your body <li><li> - An improved average mood <li> </ul> <p>I don't consider myself as 'being what I eat' but nutrition definitively brings me benefits I couldn’t get rid of.</p>",
+      gaming : "<p>Gaming is often seen as a funny way to spend your time. Truth is, I have never seen it that way. I my mind, gaming is all about social skills and competitiveness.</p><p>I'm slowly getting away from gaming but I have no regrets about all the time I have spent playing games. Gaming is a great way to develop reactivity, social habits and focus. Moreover, gaming is about struggling to reach your goals. Being top world is a certain type of games isn’t given to everyone. It shows talent, learning skills and dedication.</p><p>From 7 to 22 I went to all of those games, being highly ranked on the French scene on some of them:</p><ul><li> - Counter Strike </li><li> - Warcraft III </li><li> - Starcraft I </li><li> - Diablo II </li><li> - World Of Warcraft </li><li> - Starcraft II </li><li> - Diablo III </li> </ul> <p>Yes, I know, I'm a blizzard fan :)</p>",
+
+      trigger : function(content, title){
+        new Messi(content, {title: title});
+      },
+      events : function(){
+        $("#photo").click(function(){
+          MESSI.trigger(MESSI.photo, "Photo");
+        });
+        $("#sport").click(function(){
+          MESSI.trigger(MESSI.sport, "Sport");
+        });
+        $("#nutrition").click(function(){
+          MESSI.trigger(MESSI.nutrition, "Nutrition");
+        });
+        $("#gaming").click(function(){
+          MESSI.trigger(MESSI.gaming, "Gaming");
+        });
+      }
+    }
+
+    MESSI.events();
 
 })(jQuery);

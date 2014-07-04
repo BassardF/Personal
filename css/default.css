@@ -827,6 +827,26 @@ properly.
 	text-align: center !important;
 }
 
+.messi-closebtn{
+	height : 27px!important;
+	width : 27px!important;
+}
 
+.messi-box{
+	padding: 0px!important;
+	border-radius : 3px !important;
+	box-shadow: none !important;
+	border: 1px solid #E6E6E6;
+}
 
+.messi-wrapper{
+	border-radius : 3px !important;
+	background-color: white;
+}
 
+.messi-titlebox{
+	text-shadow: none !important;
+	border-radius: 0 0 0 0 !important;
+	background-color: #13171B !important;
+	background-image: none !important;
+}
