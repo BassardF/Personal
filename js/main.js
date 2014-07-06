@@ -151,7 +151,7 @@
       controlNav: true,
       directionNav: false,
       smoothHeight: true,
-      slideshowSpeed: 7000,
+      slideshowSpeed: 12000,
       animationSpeed: 600,
       randomize: false,
    });
@@ -261,7 +261,7 @@
           MESSI.trigger(MESSI.photo, "Photography");
         });
         $("#sport").click(function(){
-          MESSI.trigger(MESSI.sport, "Sport");
+          MESSI.trigger(MESSI.sport, "Sports");
         });
         $("#nutrition").click(function(){
           MESSI.trigger(MESSI.nutrition, "Nutrition");
