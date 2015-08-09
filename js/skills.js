@@ -46,19 +46,19 @@ var plot = {
     },
 
     drawWebFwk : function(){
-         $.jqplot('web-fwk-chart', [[['jQuery', 5],['Angular', 4],['Backbone', 3],['YUI', 3],['Ember', 3]]], this.option(10));    
+         $.jqplot('web-fwk-chart', [[['jQuery', 5],['AngularJs', 5],['ReactJs', 4],['Backbone', 4],['Babel/TypeScript', 4]]], this.option(10));    
     },
 
     drawWebAround : function(){
-         $.jqplot('web-around-chart', [[['Bower', 5],['Grunt', 4],['Gulp', 4],['Node', 3],['Karma', 3]]], this.option(10));    
+         $.jqplot('web-around-chart', [[['Bower/npm...', 5],['Grunt/Gulp', 4],['NodeJs', 4],['Express/KOA', 4],['Mocha/PhantomJs', 3]]], this.option(10));    
     },
 
     drawMobile : function(){
-         $.jqplot('mobile-chart', [[['Cordova', 5],['IOS', 3],['Android', 3]]], this.option(20));    
+         $.jqplot('mobile-chart', [[['Cordova', 5],['IOS', 4],['Android', 3]]], this.option(20));    
     },
 
     drawBackEnd : function(){
-         $.jqplot('back-end-chart', [[['Java', 5],['C', 4],['Objective-C', 4],['Swift', 4],['Ruby', 2]]], this.option(10));    
+         $.jqplot('back-end-chart', [[['Java', 5], ['JavaScript', 5], ['C/Objective-C', 4],['Swift', 4],['Ruby/Ror', 4]]], this.option(10));    
     },
 
     drawJavaFwk : function(){
